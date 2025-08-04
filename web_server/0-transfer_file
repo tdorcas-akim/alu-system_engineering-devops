@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script transfers a file from the client machine to a remote server using scp.
+
+# Check if exactly 4 parameters are provided. If not, show the usage message and exit.
+if [ "$#" -lt 4 ]; then
+    echo "Usage: 0-transfer_file Associative list.py 35.174.172.113 ubuntu \Users\Akim\.ssh\school"
+    exit 1
+fi
+
+PATH_TO_FILE="$1"
+IP="$2"
+USERNAME="$3"
+PATH_TO_SSH_KEY="$4"
