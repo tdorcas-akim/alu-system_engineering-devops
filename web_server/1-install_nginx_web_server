@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script installs and configures Nginx on an Ubuntu machine.
+
+# Update the package list (-y to auto-confirm).
+apt-get update -y
+
+apt-get install -y nginx
+
+echo "Holberton School" > /var/www/html/index.html
+
+service nginx restart
