@@ -3,7 +3,7 @@
 
 # Check if exactly 4 parameters are provided. If not, show the usage message and exit.
 if [ "$#" -lt 4 ]; then
-    echo "Usage: 0-transfer_file PATH_TO_FILE 35.174.172.113 ubuntu /Users/Akim/.ssh/school"
+    echo "Usage: 0-transfer_file PATH_TO_FILE 35.174.172.113 ubuntu /Users/Akim/.ssh"
     exit 1
 fi
 
